@@ -1,0 +1,330 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.museomoderno {
+    font-family: "MuseoModerno", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.ajudam h1 {
+    font-family: "Perandory";
+    font-weight: 600;
+    font-size: 5.9rem;
+    color: #2b231b;
+    margin-bottom: 0.9rem;
+    position: relative;
+    transform: translateY(-20px);
+    transition: all var(--transition-duration) ease-out;
+    text-align: start;
+    animation: float 6s ease-in-out infinite;
+    padding-top: 190px;
+    margin-left: 250px;
+}
+
+.ajudam p {
+    text-align: justify;
+    font-size: 25px;
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-bottom: -120px;
+}
+
+.Compartilhe h1{
+    font-family: "Perandory";
+    font-weight: 100;
+    font-size: 5.5rem;
+    color: #2b231b;
+    margin-bottom: -2rem;
+    position: relative;
+    transform: translateY(-20px);
+    transition: all var(--transition-duration) ease-out;
+    text-align: start;
+    animation: float 6s ease-in-out infinite;
+    padding-top: 150px;
+    margin-left: 250px;
+}
+.content-compartilhe p{
+    text-align: justify;
+    font-size: 25px;
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-bottom: 200px;
+    margin-top: 30px;
+}
+.content-compartilhe {
+    margin-bottom: -20rem;
+}
+
+.text-ajuda {
+    font-family: "Outfit", sans-serif;
+    color: #2b231b;
+    margin-bottom: 6rem;
+    position: relative;
+    margin-left: 100px;
+    margin-right: 50px;
+    max-width: max-content;
+    font-size: 20px;
+}
+
+.comoapoiar {
+    background-color: #142b02;
+    height: fit-content;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-top: 200px;
+    margin-bottom: -100px;
+    backdrop-filter: blur 20%;
+}
+
+.comoapoiarcontent {
+    offset-distance: 100px;
+}
+
+.comoapoiarcontent h1 {
+    font-family: "Perandory";
+    color: #f3dbaf;
+    font-size: 110px;
+    text-align: end;
+    font-weight: 400;
+    line-height: 150px;
+    letter-spacing: 3px;
+    margin-left: 330px;
+    width: 1000px;
+    margin-top: 200px;
+}
+
+.comoapoiarcontent h2{
+    font-family: "MuseoModerno";
+    color: #f3dbaf;
+    font-size: 70px;
+    text-align: justify;
+    font-weight: 400;
+    line-height: 200px;
+    letter-spacing: 3px;
+    margin-left: 270px;
+    width: 1000px;
+}
+
+.comoapoiarcontent img{
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    margin-left: 380px;
+}
+
+.barrinhalateral {
+    width: 7px;
+    background-color: #f3dbaf;
+    height: 1000px;
+    margin-left: -700px;
+}
+
+.comoapoiarcontent p {
+    font-family: "Outfit", sans-serif;
+    color: #f3dbaf;
+    margin-top: 6rem;
+    position: relative;
+    transform: translateY(-20px);
+    transition: all var(--transition-duration) ease-out;
+    text-align: justify;
+    animation: float 6s ease-in-out infinite;
+    margin-left: 30px;
+    margin-right: 30px;
+    width: 1300px;
+    font-size: 30px;
+}
+
+footer.footer {
+    background-color: #2b231b;
+    color: #ddd;
+    padding: 4rem 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: auto;
+}
+
+.letter {
+    background-color: #dcc59c;
+    padding: 60px 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+    transform: translateY(30px);
+    transition: all 0.6s ease;
+    border-radius: 20px;
+    font-family: Arial, sans-serif;
+    color: #43342b;
+}
+
+.letter .letter-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 5em;
+    margin-bottom: 15px;
+}
+
+.letter-title {
+    font-family: "Tangerine", cursive;
+    font-weight: 900;
+    margin: 0px 0px 15px 0px;
+}
+
+.letter p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    margin-top: 10px;
+    margin-right: 35px;
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    font-style: italic;
+}
+
+.seal-section {
+    background: linear-gradient(135deg, #142b02 0%, #354e2a 100%);
+    padding: 4rem;
+    color: var(--primary-bg);
+    margin-top: 0;
+    transform: translateY(20px);
+    transition: all var(--transition-duration) ease-out;
+    position: relative;
+    overflow: visible;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+    width: 100%;
+}
+
+.footer-bottom {
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(229, 229, 229, 0.1);
+    text-align: center;
+    font-size: 0.9rem;
+    color: rgba(229, 229, 229, 0.7);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.scroll-indicator {
+    display: none;
+}
+
+.apoio-context {
+    width: 600px;
+    margin-top: 13rem;
+    margin-left: 32%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cima-ajudas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 89%;
+    margin-top: 10px;
+    margin-left: 6%;
+}
+
+.banho-ajudas {
+    filter: opacity(0);
+}
+
+.baixo-ajudas {
+    opacity: 0;  
+    transition: opacity 0.3s ease;  
+}
+
+.ajudas {
+    width: 90%;
+    height: 5rem;
+    background-color: #2b231b;
+    border-radius: 25px;
+    margin-top: 30px;
+    transition: height 0.5s ease;
+}
+
+.ajudas img {
+    transition: transform 0.5s ease;
+}
+
+.ajudas h2 {
+    color: #dcc59c;
+    font-family: "Outfit", sans-serif;
+    font-size: 32px;
+    margin-top: 10px;
+}
+
+.ajudas hr {
+    height: 3px;
+    width: 88%;
+    margin-top: 20px;
+    margin-left: 6%;
+    border: none;
+    background-color: #dcc59c;
+}
+
+.ajudas input {
+    margin-left: 5%;
+    margin-top: 10%;
+    width: 90%;
+    height: 100px;
+    border-radius: 20px;
+    background-color: #dcc59c;
+    font-size: 30px;
+    padding: 20px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    outline: none;
+    font-size: 24px;
+    font-family: "Outfit", sans-serif;
+}
+
+.ajudas input:hover {
+    background-color: #b29e7c;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+} 
+
+.ajudas button {
+    margin-top: 17px;
+    height: 50px;
+    width: 150px;
+    border-radius: 10px;
+    background-color: #3a2f25;
+    border: 2px solid #dcc59c;
+    color: #dcc59c;
+    font-size: 20px;
+    margin-left: 35%;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.ajudas button:hover {
+    background-color: #dcc59c;
+    color: #3a2f25;
+    transform: scale(1.05);
+    cursor: pointer;
+}

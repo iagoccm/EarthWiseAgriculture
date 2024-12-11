@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EarthWise Agriculture</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/doar.css">
+
+    <link rel="icon" href="img/logo-do-site.png" type="image/png">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <span class="logo">EarthWise Agriculture</span>
+            <!-- <div class="mobile-menu">☰</div> -->
+            <div class="nav-links">
+                <a href="index.html">Início</a>
+                <a href="obterselo.html">Selo</a>
+                <a href="empresas.html">Empresas</a>
+                <a href="doar.html">Doar</a>
+                <a href="contatos.html">Contatos</a>
+            </div>
+        </nav>
+    </header>
+
+    <button id="menu-btn" class="menu-btn">☰</button>
+
+    <div id="sidebar" class="sidebar">
+        <button id="close-btn" class="close-btn">×</button>
+        <h2>Menu</h2>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="obterselo.html">Selo</a></li>
+            <li><a href="empresas.html">Empresas</a></li>
+            <li><a href="doar.html">Doar</a></li>
+            <li><a href="contatos.html">Contatos</a></li>
+        </ul>
+    </div>
+
+    <div class="ajudam">
+        <div class="content-ajudam"></div>
+        <h1 class="title">Ajude-nos</h1>
+        <p class="text-ajuda">Para ajudar nossa companhia você pode enviar quantias financeiras de apoio. Essas quantias
+            nos ajudam a remunerar os nossos profissionais, comprar equipamentos de qualidade, fazer mais projetos para
+            identificação das empresas que se adequam na obtenção do selo, melhorias de design do selo e de outros
+            assets do nosso website, financiamento de páginas de ONGs de mesmo interesse ao nosso, dentre outros gastos
+            de pesquisa e manutenção.
+        </p>
+
+        <div class="apoio-context">
+            <div class="ajudas" id="ajudas1">
+                <div class="cima-ajudas">
+                    <h2 class="doar-h2">Seu e-mail</h2>
+                    <img src="img/acento-circunflexo.png" id="seta1" width="60px" alt=""
+                        onclick="ajudeRevel('ajudas1', 'seta1')">
+                </div>
+                <div class="baixo-ajudas" id="baixo-ajuda1">
+                    <hr>
+                    <input type="text" placeholder="exemplo@gmail.com">
+                    <button class="doaF">Pronto</button>
+                </div>
+            </div>
+
+            <div class="ajudas" id="ajudas2">
+                <div class="cima-ajudas">
+                    <h2 class="doar-h2">Sua Contribuição</h2>
+                    <img src="img/acento-circunflexo.png" id="seta2" width="60px" alt=""
+                        onclick="ajudeRevel('ajudas2', 'seta2')">
+                </div>
+                <div class="baixo-ajudas" id="baixo-ajuda2">
+                    <hr>
+                    <input type="text" placeholder="R$ 30,00">
+                    <button class="doaF">Pronto</button>
+                </div>
+            </div>
+
+            <div class="ajudas" id="ajudas3">
+                <div class="cima-ajudas">
+                    <h2 class="doar-h2">Pagamento</h2>
+                    <img src="img/acento-circunflexo.png" id="seta3" width="60px" alt=""
+                        onclick="ajudeRevel('ajudas3', 'seta3')">
+                </div>
+                <div class="baixo-ajudas" id="baixo-ajuda3">
+                    <hr>
+                    <input type="text" placeholder=" Cartão de crédito, boleto, PayPal ou PIX">
+                    <button class="doaF">Pronto</button>
+                </div>
+            </div>
+
+            <div class="ajudas" id="ajudas4">
+                <div class="cima-ajudas">
+                    <h2 class="doar-h2">Informações Adicionais</h2>
+                    <img src="img/acento-circunflexo.png" id="seta4" width="60px" alt=""
+                        onclick="ajudeRevel('ajudas4', 'seta4')">
+                </div>
+                <div class="baixo-ajudas" id="baixo-ajuda4">
+                    <hr>
+                    <input type="text" placeholder="Digite aqui!">
+                    <button class="doaF">Pronto</button>
+                </div>
+            </div>
+
+            <div class="ajudas" id="ajudas5">
+                <div class="cima-ajudas">
+                    <h2 class="doar-h2">Avalie e Doe</h2>
+                    <img src="img/acento-circunflexo.png" id="seta5" width="60px" alt=""
+                        onclick="ajudeRevel('ajudas5', 'seta5')">
+                </div>
+                <div class="baixo-ajudas" id="baixo-ajuda5">
+                    <hr>
+                    <input type="text" placeholder="Avalie aqui!">
+                    <button class="doaF">Pronto</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+    <script>
+        function ajudeRevel(idAjudas, idSeta) {
+            var baixo = document.getElementById("baixo-ajuda" + idAjudas.charAt(idAjudas.length - 1));
+            var altura = document.getElementById(idAjudas);
+            var clique = document.getElementById(idSeta);
+
+            // Se a div estiver oculta, mostre-a
+            if (baixo.style.opacity == 0 || baixo.style.opacity === "") {
+                baixo.style.opacity = 1;
+                baixo.style.transition = "opacity 2s ease";
+                altura.style.height = "21rem";
+                altura.style.transition = "height 0.5s ease";
+                clique.style.transform = "rotate(-90deg)";
+            } else {
+                // Caso contrário, esconda-a
+                baixo.style.opacity = 0;
+                baixo.style.transition = "opacity 0.1s ease";
+                altura.style.height = "5rem";
+                altura.style.transition = "height 0.5s ease";
+                clique.style.transform = "rotate(0deg)";
+            }
+        }
+
+    </script>
+
+
+
+    <div class="comoapoiar">
+        <div class="comoapoiarcontent">
+            <div class="barrinhalateral">
+                <h1 class="h1comoapoiar">Como Apoiar</h1>
+                <p class="pcomoapoiar">Oferecemos várias opções de doação para facilitar a sua contribuição. Você
+                    pode escolher a opção que mais se adequa às suas possibilidades e preferências:
+
+                    Doação Única: Se você deseja contribuir com um valor específico em uma única vez, basta
+                    preencher o formulário de doação com os dados solicitados e o valor desejado.
+
+                    Doação Mensal: Se preferir fazer uma contribuição recorrente, que ajude de forma contínua em
+                    nossos projetos ao longo do tempo, oferecemos a opção de doações mensais.
+
+                    Doações Especiais: Para quem deseja apoiar uma causa ou projeto específico dentro da nossa
+                    organização, é possível fazer uma doação direcionada.
+
+                    Ao escolher o tipo de doação, você será redirecionado para uma página onde poderá preencher seus
+                    dados pessoais e escolher o meio de pagamento. As opções incluem:
+
+                    Cartão de crédito
+
+                    Transferência bancária
+
+                    Pagamento via plataformas de pagamento online (como PayPal)
+
+                    Importante: Seus dados estarão totalmente protegidos em nosso sistema. Garantimos que suas
+                    informações pessoais e financeiras serão tratadas com total segurança.</p>
+            </div>
+            <div class="parallax-comoapoiar"></div>
+        </div>
+    </div>
+
+
+    <div class="Compartilhe">
+        <div class="content-compartilhe">
+            <div class="barrinhalateral2"></div>
+            <h1 class="title">Compartilhe a causa</h1>
+            <p class="text-Compartilhe">Além de doar, você pode
+                ajudar a EarthWise Agriculture a alcançar mais pessoas, compartilhando nossas iniciativas nas redes
+                sociais e convidando amigos e familiares a se engajarem com nossa causa.
+            </p>
+        </div>
+    </div>
+
+    <div class="comoapoiar">
+        <div class="comoapoiarcontent">
+            <h2>Doe acima de R$ 30,00</h2>
+            <img src="img/aba-doar-removebg-preview.png" alt="">
+            <h2>E ganhe nossa Caneca</h2>
+            <br><br>
+            <br>
+        </div>
+    </div>
+
+
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section" style="--delay: 1">
+                <h3>Sobre Nós</h3>
+                <p>Somos uma organização dedicada a transformar vidas através da agricultura sustentável e do
+                    desenvolvimento social, promovendo um futuro melhor para todos.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-section" style="--delay: 2">
+                <h3>Links Rápidos</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html#nossa-missao">Nossa Missão</a></li>
+                    <li><a href="index.html#nosso-selo">Nosso Selo</a></li>
+                    <li><a href="index.html#carta-compromisso">Carta de compromisso com o consumidor</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section" style="--delay: 3">
+                <h3>Contato</h3>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <span class="contact-icon">📍</span>
+                        <span>Rua Example, 123 - Cidade, Estado</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📞</span>
+                        <span>(11) 9999-9999</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">✉️</span>
+                        <span>contato@earthwiseagriculture.org</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-section" style="--delay: 4">
+                <h3>Newsletter</h3>
+                <p>Inscreva-se para receber novidades sobre nossos projetos e ações.</p>
+                <form class="newsletter-form" onsubmit="event.preventDefault(); validarEmail();">
+                    <input type="email" class="newsletter-input" placeholder="Seu e-mail"
+                        aria-label="Endereço de e-mail para newsletter" id="email-input"
+                        pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required>
+                    <button type="submit" class="newsletter-button">
+                        Inscrever
+                    </button>
+                </form>
+                <p id="mensagem-sucesso" style="display: none; color: #8B9A46; margin-top: 10px;">Inscrição
+                    realizada
+                    com sucesso!</p>
+            </div>
+
+            <script>
+                function validarEmail() {
+                    var emailInput = document.getElementById("email-input");
+                    var email = emailInput.value;
+
+                    var regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+                    if (!regex.test(email)) {
+                        alert("Por favor, insira um e-mail válido.");
+                    } else {
+                        mostrarMensagemSucesso();
+                        limparCampo();
+                        removerFoco();
+                    }
+                }
+
+                function mostrarMensagemSucesso() {
+                    var mensagem = document.getElementById("mensagem-sucesso");
+                    mensagem.style.display = "block";
+
+                    setTimeout(function () {
+                        mensagem.style.display = "none";
+                    }, 3000);
+                }
+
+                function limparCampo() {
+                    var emailInput = document.getElementById("email-input");
+                    emailInput.value = "";
+                }
+
+                function removerFoco() {
+                    var emailInput = document.getElementById("email-input");
+                    emailInput.blur();
+                }
+
+                var emailInput = document.getElementById("email-input");
+                emailInput.addEventListener("focus", function () {
+                    var mensagem = document.getElementById("mensagem-sucesso");
+                    mensagem.style.display = "none";
+                });
+
+                document.querySelector('.scroll-indicator').addEventListener('click', () => {
+                    window.scrollTo({
+                        top: window.innerHeight,
+                        behavior: 'smooth'
+                    });
+                });
+            </script>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 EarthWise Agriculture. Todos os direitos reservados.</p>
+        </div>
+
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+    <script src="js/script.js" defer></script>
+
+</body>
+
+</html>
